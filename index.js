@@ -1,5 +1,6 @@
 const http = require("http")
-const httpserver = http.createServer() // server application loader
+const app = require('./src/config/express.config')
+const httpserver = http.createServer(app) // server application loader
 
 //0-65535 `100 well defined ports 
 // 21, 25, 80, 22, 443, 27017, 5432, 6000, not use ports
